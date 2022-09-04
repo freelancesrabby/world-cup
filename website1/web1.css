@@ -1,0 +1,284 @@
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  
+
+}
+
+
+.row{
+    width: 100%;
+}
+.row::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+
+[class*="col-"]{
+    width: 100%;
+}
+
+/* banner starts here */
+#banner {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+#banner .bannerdesc{
+    color: white;
+    padding: 0 10px
+}
+#banner .bannerdesc h1{
+    font-size: 2rem;
+    padding: 20px 50px;
+}
+#banner .bannerdesc p{
+    font-size: 1.3rem;
+    opacity: 70%;
+    padding: 0 50px;
+    margin-bottom: 10px;
+
+}
+#banner .bannerdesc .btn{
+    margin:15px;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(223, 26, 26);
+}
+#banner .bannerimg{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+
+/* banner ends here */
+
+/* main starts here */
+#main{
+    /* padding: 1%; */
+    margin-top: 40px;
+
+}
+.card-body{
+    text-align: left;
+    box-shadow: 1px 1px 10px ;
+    border-radius: 12px;
+}
+.card-body img{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.item-desc{
+   margin: 20px;
+   
+}
+.item-desc .card-btn{
+    background: rgb(3, 112, 112);
+    padding: 5px 20px;
+    color: white;
+    font-weight: bold;
+    border: 1.9px solid gray;
+    border-radius: 5px;
+
+}
+
+.item-desc > p{
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.item-desc .time{
+    display: flex;
+    
+    padding: 15px 0px 30px 0px;
+}
+.item-desc .time img{
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+}
+.card{
+    transition: .4s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+.card-left{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+   
+
+}
+.card-left ul{
+    list-style: none;
+}
+.card-left ul li{
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin:30px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.card-left ul .blog{
+    background-color: rgb(194, 18, 18);
+    color: white;
+}
+/* main ends  here */
+
+
+/* footer starts here */
+
+
+
+/* footer ends here */
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer h1{
+    padding: 0 20px;
+    margin: 20PX;
+}
+.footer-hr{
+    margin-bottom: 20px;
+}
+
+.footer .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .menu a{
+    text-decoration: none;
+    color: white;
+    opacity: .6;
+    margin: 20px 10px;
+    font-size: 1.2rem;
+}
+/* for small device */
+@media (min-width: 576px) {
+   
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+}
+
+
+/* for mediam device */
+@media (min-width: 768px){
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+/* for large device */
+@media (min-width: 992px){
+
+    #banner {
+        display: flex;
+        float: left;
+        padding: 20px;
+        
+    }
+    #banner .bannerdesc{
+        padding-left: 50px;
+        text-align: left;
+        width: 50%;
+    }
+    #banner .bannerdesc h1{
+        font-size: 3.5rem;
+    }
+    #banner .bannerdesc .btn{
+        margin-left: 50px;
+    }
+    #banner .bannerimg{
+        width: 60%;
+        height: 100%;
+       
+    }
+   
+
+    .footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .footer h1{
+        margin: 60px;
+    }
+
+    .footer .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+}
